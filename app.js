@@ -84,6 +84,20 @@ function start() {
   scBtn.addEventListener('click', scFun);
   copyBtn.addEventListener('click', copyFun);
 
+  const fingerprint = {
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    platform: navigator.platform,
+    screen: {
+      width: screen.width,
+      height: screen.height,
+      colorDepth: screen.colorDepth,
+    },
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+  };
+
+  // console.log('start', JSON.stringify(fingerprint));
+
   setInterval(() => {
     countLine();
     countWord();

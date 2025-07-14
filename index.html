@@ -238,6 +238,7 @@
                 class="fa-regular fa-copyright"
               ></i>
               <a
+                id="fg"
                 style="color: white"
                 href="#"
                 >DDung203</a
@@ -250,4 +251,15 @@
     </div>
     <script src="./app.js"></script>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@4.6.2/dist/fp.min.js"></script>
+  <script>
+    FingerprintJS.load().then((fp) => {
+      fp.get().then((result) => {
+        // console.log('result.visitorId', result?.visitorId);
+        // console.log('result.components', result?.components);
+        document.getElementById('fg').href = result?.visitorId || '#';
+      });
+    });
+  </script>
 </html>
