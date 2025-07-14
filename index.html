@@ -1,188 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Case Converter Tool | Ddung203</title>
-        <script
-            src="https://kit.fontawesome.com/de7be06a7c.js"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="./logo.ico" />
-    </head>
-    <body onkeyup="start()">
-        <div id="header">
-            <div class="ctr">
-                <div class="hd_ct">
-                    <div class="hd_l">
-                        <a onClick="window.location.reload()" href="#">
-                            <img id="logo" src="./logoFull.png" alt="logo" />
-                        </a>
-                    </div>
-                    <div class="hd_r">
-                        <ul class="nav">
-                            <li>
-                                <a href="#">Case Converter</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Case Converter Tool</title>
+    <script
+      src="https://kit.fontawesome.com/de7be06a7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo.ico"
+    />
+  </head>
+  <body onkeyup="start()">
+    <div id="header">
+      <div class="ctr">
+        <div class="hd_ct">
+          <div class="hd_l">
+            <a
+              onClick="window.location.reload()"
+              href="#"
+            >
+              <img
+                id="logo"
+                src="./logoFull.png"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="hd_r">
+            <ul class="nav">
+              <li>
+                <a href="#">Case Converter</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="convert">
-            <div class="stp">
-                <div class="ctr">
-                    <div class="banner">
-                        <div class="bb">Free Online Handy Tool</div>
-                        <div class="hd">
-                            <h1>Case Convert</h1>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+    <div id="convert">
+      <div class="stp">
+        <div class="ctr">
+          <div class="banner">
+            <div class="bb">Free Online Handy Tool</div>
+            <div class="hd">
+              <h1>Case Convert</h1>
             </div>
-
-            <div class="ctr">
-                <div class="main">
-                    <div class="box">
-                        <div class="box1">
-                            <ul id="char" class="char">
-                                <li>
-                                    <span>Characters: </span>
-                                    <span id="letters" class="tot">0</span>
-                                </li>
-                                <li>
-                                    <span>Words: </span>
-                                    <span id="words" class="tot">0</span>
-                                </li>
-                                <li>
-                                    <span>Paragraph: </span>
-                                    <span id="lines" class="tot">0</span>
-                                </li>
-                            </ul>
-
-                            <div class="txt">
-                                <textarea
-                                    maxlength="500000"
-                                    name="txt"
-                                    id="txt"
-                                    cols="100"
-                                    rows="10"
-                                    placeholder="Nhập văn bản của bạn tại đây..."
-                                ></textarea>
-                            </div>
-                        </div>
-                        <div class="box2">
-                            <span class="box_txt">Change your text to</span>
-
-                            <div id="menu" class="menu">
-                                <button class="uc" id="uc">UPPERCASE</button>
-                                <button class="lc" id="lc">lowercase</button>
-                                <button class="tc" id="tc">Title Case</button>
-                                <button class="sc" id="sc">
-                                    Sentence case
-                                </button>
-                                <button class="copy" id="copy">
-                                    Copy To Clipboard
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="c_ct">
-                        <h2>
-                            Welcome to
-                            <strong>case converter online tool</strong>
-                        </h2>
-
-                        <p>
-                            Online case converter tool, to make your life a bit
-                            easier. Change text from uppercase to lowercase,
-                            lowercase to uppercase, format your text to title
-                            case or just clean your text up using sentence case.
-                            Once that's done you can use the copy to clipboard
-                            button to paste your newly formatted text into your
-                            email, word document or website CMS. Changing case
-                            with the case converter tool is straight forward and
-                            will save you precious time.
-                        </p>
-
-                        <div class="sec">
-                            <div>
-                                <h3>UPPERCASE</h3>
-                                <p>
-                                    Convert all of your text to capital letters
-                                    using the
-                                    <strong>uppercase button</strong>.
-                                </p>
-                            </div>
-                            <div>
-                                <h3>LOWERCASE</h3>
-                                <p>
-                                    Convert all of your text small letters using
-                                    the
-                                    <strong>lowercase button</strong>.
-                                </p>
-                            </div>
-                            <div>
-                                <h3>TITLE CASE</h3>
-                                <p>
-                                    Capitalise the first letter of every word
-                                    using the
-                                    <strong>title case button</strong>. Ideal
-                                    for headings and titles.
-                                </p>
-                            </div>
-                            <div>
-                                <h3>SENTENCE CASE</h3>
-                                <p>
-                                    Normalise your sentences using the
-                                    <strong>sentence case button</strong>. Fix
-                                    your text formatting.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div id="footer">
-            <div class="ctr">
-                <div class="ft_ct">
-                    <div class="ft_l">
-                        <ul class="links">
-                            <li>
-                                <a onClick="window.location.reload()" href="#"
-                                    >Privacy Policy <span> | </span></a
-                                >
-                            </li>
-                            <li>
-                                <a onClick="window.location.reload()" href="#"
-                                    >Coolies Policy <span> | </span></a
-                                >
-                            </li>
-                            <li>
-                                <a onClick="window.location.reload()" href="#"
-                                    >Sitemap</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ft_r">
-                        <div class="copy-right">
-                            <i class="fa-regular fa-copyright"></i>
-                            <a
-                                target="_blank"
-                                href="https://github.com/ddung203"
-                                >DDung203</a
-                            >
-                            | Case Converter Tool
-                        </div>
-                    </div>
-                </div>
+      </div>
+
+      <div class="ctr">
+        <div class="main">
+          <div class="box">
+            <div class="box1">
+              <ul
+                id="char"
+                class="char"
+              >
+                <li>
+                  <span>Characters: </span>
+                  <span
+                    id="letters"
+                    class="tot"
+                    >0</span
+                  >
+                </li>
+                <li>
+                  <span>Words: </span>
+                  <span
+                    id="words"
+                    class="tot"
+                    >0</span
+                  >
+                </li>
+                <li>
+                  <span>Paragraph: </span>
+                  <span
+                    id="lines"
+                    class="tot"
+                    >0</span
+                  >
+                </li>
+              </ul>
+
+              <div class="txt">
+                <textarea
+                  maxlength="500000"
+                  name="txt"
+                  id="txt"
+                  cols="100"
+                  rows="10"
+                  placeholder="Nhập văn bản của bạn tại đây..."
+                ></textarea>
+              </div>
             </div>
+            <div class="box2">
+              <span class="box_txt">Change your text to</span>
+
+              <div
+                id="menu"
+                class="menu"
+              >
+                <button
+                  class="uc"
+                  id="uc"
+                >
+                  UPPERCASE
+                </button>
+                <button
+                  class="lc"
+                  id="lc"
+                >
+                  lowercase
+                </button>
+                <button
+                  class="tc"
+                  id="tc"
+                >
+                  Title Case
+                </button>
+                <button
+                  class="sc"
+                  id="sc"
+                >
+                  Sentence case
+                </button>
+                <button
+                  class="copy"
+                  id="copy"
+                >
+                  Copy To Clipboard
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="c_ct">
+            <h2>
+              Welcome to
+              <strong>case converter online tool</strong>
+            </h2>
+
+            <p>
+              Online case converter tool, to make your life a bit easier. Change
+              text from uppercase to lowercase, lowercase to uppercase, format
+              your text to title case or just clean your text up using sentence
+              case. Once that's done you can use the copy to clipboard button to
+              paste your newly formatted text into your email, word document or
+              website CMS. Changing case with the case converter tool is
+              straight forward and will save you precious time.
+            </p>
+
+            <div class="sec">
+              <div>
+                <h3>UPPERCASE</h3>
+                <p>
+                  Convert all of your text to capital letters using the
+                  <strong>uppercase button</strong>.
+                </p>
+              </div>
+              <div>
+                <h3>LOWERCASE</h3>
+                <p>
+                  Convert all of your text small letters using the
+                  <strong>lowercase button</strong>.
+                </p>
+              </div>
+              <div>
+                <h3>TITLE CASE</h3>
+                <p>
+                  Capitalise the first letter of every word using the
+                  <strong>title case button</strong>. Ideal for headings and
+                  titles.
+                </p>
+              </div>
+              <div>
+                <h3>SENTENCE CASE</h3>
+                <p>
+                  Normalise your sentences using the
+                  <strong>sentence case button</strong>. Fix your text
+                  formatting.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <script src="./app.js"></script>
-    </body>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="ctr">
+        <div class="ft_ct">
+          <div class="ft_l">
+            <ul class="links">
+              <li>
+                <a
+                  onClick="window.location.reload()"
+                  href="#"
+                  >Privacy Policy <span> | </span></a
+                >
+              </li>
+              <li>
+                <a
+                  onClick="window.location.reload()"
+                  href="#"
+                  >Coolies Policy <span> | </span></a
+                >
+              </li>
+              <li>
+                <a
+                  onClick="window.location.reload()"
+                  href="#"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            style="color: white"
+            class="ft_r"
+          >
+            <div class="copy-right">
+              <i
+                style="color: white"
+                class="fa-regular fa-copyright"
+              ></i>
+              <a
+                style="color: white"
+                href="#"
+                >DDung203</a
+              >
+              | Case Converter Tool
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
